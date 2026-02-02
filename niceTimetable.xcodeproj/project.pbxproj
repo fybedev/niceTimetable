@@ -12,6 +12,9 @@
 		01C150B02E8C003B00D61252 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C150AF2E8C003B00D61252 /* WidgetKit.framework */; };
 		01C150B22E8C003C00D61252 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C150B12E8C003B00D61252 /* SwiftUI.framework */; };
 		01C150BD2E8C003D00D61252 /* basicWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 01C150AD2E8C003B00D61252 /* basicWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0944078B460D21A087E2E007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF09D2A225A79CAEEB11D870 /* Foundation.framework */; };
+		50FAA7F6024FFE2DAE4A114B /* PreferencesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13986391BBF53635F11B56C9 /* PreferencesManagerTests.swift */; };
+		E707D47B606C5534740365E5 /* SchoolModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD0B6D85BCB4A4E0EE12D5 /* SchoolModelsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,6 +24,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 01C150AC2E8C003B00D61252;
 			remoteInfo = basicWidgetExtension;
+		};
+		87ACEA4A863070F106787EE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01FEEE932E8BD23C00E91178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01FEEE9A2E8BD23C00E91178;
+			remoteInfo = niceTimetable;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,6 +56,11 @@
 		01C150B12E8C003B00D61252 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		01C150C92E8C173500D61252 /* basicWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = basicWidgetExtension.entitlements; sourceTree = "<group>"; };
 		01FEEE9B2E8BD23C00E91178 /* niceTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niceTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13986391BBF53635F11B56C9 /* PreferencesManagerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = niceTimetableTests/PreferencesManagerTests.swift; sourceTree = "<group>"; };
+		40CD0B6D85BCB4A4E0EE12D5 /* SchoolModelsTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = niceTimetableTests/SchoolModelsTests.swift; sourceTree = "<group>"; };
+		49D03661F9D83B5C3887B131 /* niceTimetableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = niceTimetableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF09D2A225A79CAEEB11D870 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F1E624698F12F443AFC27E0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = niceTimetableTests/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -116,6 +131,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		396968CB193B89643CD6D9DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0944078B460D21A087E2E007 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,6 +147,7 @@
 			children = (
 				01C150AF2E8C003B00D61252 /* WidgetKit.framework */,
 				01C150B12E8C003B00D61252 /* SwiftUI.framework */,
+				A1BA4012AB0B7B47C37F7564 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +162,7 @@
 				01C150B32E8C003C00D61252 /* basicWidget */,
 				01C150AE2E8C003B00D61252 /* Frameworks */,
 				01FEEE9C2E8BD23C00E91178 /* Products */,
+				57657E53B8801E119A1CEDF0 /* niceTimetableTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,8 +171,27 @@
 			children = (
 				01FEEE9B2E8BD23C00E91178 /* niceTimetable.app */,
 				01C150AD2E8C003B00D61252 /* basicWidgetExtension.appex */,
+				49D03661F9D83B5C3887B131 /* niceTimetableTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		57657E53B8801E119A1CEDF0 /* niceTimetableTests */ = {
+			isa = PBXGroup;
+			children = (
+				40CD0B6D85BCB4A4E0EE12D5 /* SchoolModelsTests.swift */,
+				13986391BBF53635F11B56C9 /* PreferencesManagerTests.swift */,
+				F1E624698F12F443AFC27E0D /* Info.plist */,
+			);
+			name = niceTimetableTests;
+			sourceTree = "<group>";
+		};
+		A1BA4012AB0B7B47C37F7564 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF09D2A225A79CAEEB11D870 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +213,6 @@
 				01C150B32E8C003C00D61252 /* basicWidget */,
 			);
 			name = basicWidgetExtension;
-			packageProductDependencies = (
-			);
 			productName = basicWidgetExtension;
 			productReference = 01C150AD2E8C003B00D61252 /* basicWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -193,11 +235,27 @@
 				01FEEE9D2E8BD23C00E91178 /* niceTimetable */,
 			);
 			name = niceTimetable;
-			packageProductDependencies = (
-			);
 			productName = niceTimetable;
 			productReference = 01FEEE9B2E8BD23C00E91178 /* niceTimetable.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EA3D7E57F608C9717A8DF1F5 /* niceTimetableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050626E4469C49737B612AC1 /* Build configuration list for PBXNativeTarget "niceTimetableTests" */;
+			buildPhases = (
+				4E4214B66D77192BD529A12D /* Sources */,
+				396968CB193B89643CD6D9DB /* Frameworks */,
+				BD17E1501BED1D10588A925F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C04A822F2CAE82A05105913 /* PBXTargetDependency */,
+			);
+			name = niceTimetableTests;
+			productName = niceTimetableTests;
+			productReference = 49D03661F9D83B5C3887B131 /* niceTimetableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -233,6 +291,7 @@
 			targets = (
 				01FEEE9A2E8BD23C00E91178 /* niceTimetable */,
 				01C150AC2E8C003B00D61252 /* basicWidgetExtension */,
+				EA3D7E57F608C9717A8DF1F5 /* niceTimetableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +307,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		01FEEE992E8BD23C00E91178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD17E1501BED1D10588A925F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,6 +337,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4E4214B66D77192BD529A12D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E707D47B606C5534740365E5 /* SchoolModelsTests.swift in Sources */,
+				50FAA7F6024FFE2DAE4A114B /* PreferencesManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -278,6 +353,12 @@
 			isa = PBXTargetDependency;
 			target = 01C150AC2E8C003B00D61252 /* basicWidgetExtension */;
 			targetProxy = 01C150BB2E8C003D00D61252 /* PBXContainerItemProxy */;
+		};
+		8C04A822F2CAE82A05105913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = niceTimetable;
+			target = 01FEEE9A2E8BD23C00E91178 /* niceTimetable */;
+			targetProxy = 87ACEA4A863070F106787EE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,6 +622,41 @@
 			};
 			name = Release;
 		};
+		72BB3BB0767F83EF73C189A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = niceTimetableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jongwoo.niceTimetableTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/niceTimetable.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/niceTimetable";
+			};
+			name = Debug;
+		};
+		E7CECFD216D2617D3C1B6800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = niceTimetableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jongwoo.niceTimetableTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/niceTimetable.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/niceTimetable";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -567,6 +683,15 @@
 			buildConfigurations = (
 				01FEEEA72E8BD23E00E91178 /* Debug */,
 				01FEEEA82E8BD23E00E91178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050626E4469C49737B612AC1 /* Build configuration list for PBXNativeTarget "niceTimetableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CECFD216D2617D3C1B6800 /* Release */,
+				72BB3BB0767F83EF73C189A3 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
