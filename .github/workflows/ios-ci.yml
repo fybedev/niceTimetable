@@ -29,6 +29,7 @@ jobs:
           -project niceTimetable.xcodeproj \
           -scheme niceTimetable \
           -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+          IPHONEOS_DEPLOYMENT_TARGET=26.2 \
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO
     
@@ -40,6 +41,7 @@ jobs:
           -scheme niceTimetable \
           -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
           -enableCodeCoverage YES \
+          IPHONEOS_DEPLOYMENT_TARGET=26.2 \
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO
         TEST_EXIT_CODE=$?
