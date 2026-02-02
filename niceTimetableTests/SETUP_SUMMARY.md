@@ -152,7 +152,7 @@ final class MyNewTests: XCTestCase {
 - **Swift Version**: 5.0
 
 ### GitHub Actions Runner
-- **OS**: macOS 14 (Ventura)
+- **OS**: macOS 14 (Sonoma)
 - **Xcode**: Latest available on the runner
 - **Test Destination**: iPhone 15 Simulator, latest iOS
 
