@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: macos-14  # macOS 14 (Sonoma) with Xcode 15.x
+    runs-on: macos-15  # macOS 15 (Sequoia) with Xcode 16.x
     permissions:
       contents: read
     
